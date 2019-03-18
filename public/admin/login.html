@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐淘后台系统主页</title>
+    <!-- 1. 需要什么包就引入什么包
+    2. css在head中 js在body结束标签上面
+    3. 如果有依赖的 先引入依赖的再引入不依赖的
+    4. 先引入第三方 在引入自己的 -->
+    <!-- 1. 引入bootstrap.css -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <!-- 2. 如果需要字体图标引入字体图标库的css -->
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.css">
+    <!-- 3. 引入自己css -->
+    <link rel="stylesheet" href="./less/login.css">
+</head>
+
+<body>
+    <!-- bootstrap全局CSS样式 表单 -->
+    <!-- <form class="form-horizontal">
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Sign in</button>
+            </div>
+        </div>
+    </form> -->
+    <!-- 使用组件 里面 输入框组 -->
+    <form action="#" class="form-horizontal">
+        <img class="logo" src="./images/jy.jpeg" alt="">
+        <div class="input-group">
+            <span class="input-group-addon" >用户名</span>
+            <input type="text" id="username" class="form-control" placeholder="请输入用户名" value="root">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon" >密 &nbsp;&nbsp; 码</span>
+            <input type="password" id="password" class="form-control" placeholder="请输入密码" value="123456">
+        </div>
+
+        <div class="input-group">
+            <button class="btn btn-primary btn-block btn-login">登录</button>
+        </div>
+    </form>
+    <!-- 1. bootstrap依赖jquery 先引入jQuery -->
+    <script src="./lib/jquery/jquery.js"></script>
+    <!-- 2. 引入bootstrap的js -->
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <!-- 3. 引入模板引擎template-web -->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 4. 引入自己的js -->
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
